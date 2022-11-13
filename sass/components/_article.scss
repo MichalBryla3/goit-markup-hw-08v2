@@ -1,0 +1,26 @@
+.article {
+  margin-bottom: 94px;
+  display: flex;
+  justify-content: center;
+
+  &__container {
+    @extend %container;
+  }
+  &__group {
+    display: flex;
+    padding: 0px;
+  }
+  &__title {
+    font-weight: 700;
+    margin: 30px 0px 10px;
+  }
+  &__text {
+    color: var(--fourth-color);
+    margin: 0px;
+  }
+  &__icon {
+    width: 270px;
+    height: 120px;
+    background-color: var(--secondary-color);
+  }
+}

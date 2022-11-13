@@ -1,0 +1,21 @@
+.logo {
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  display: flex;
+  align-items: center;
+
+  &__header--first {
+    color: var(--primary-color);
+  }
+  &__header--second {
+    color: var(--text-color);
+  }
+  &__footer--first {
+    color: var(--primary-color);
+  }
+  &__footer--second {
+    color: var(--third-color);
+  }
+}

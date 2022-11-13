@@ -1,0 +1,15 @@
+%container {
+  width: 1200px;
+  margin: 0px 215px;
+}
+
+%hover-btn {
+  background-color: var(--third-color);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  transition: transform 250ms var(--transition);
+}
+%hover-links {
+  color: var(--primary-color);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

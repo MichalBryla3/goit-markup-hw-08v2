@@ -1,0 +1,82 @@
+.header {
+  border-bottom: 1px solid #ececec;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__container {
+    @extend %container;
+    display: flex;
+    align-items: center;
+
+    &--left {
+      display: flex;
+      justify-content: flex-start;
+      margin: 0 auto 0 0;
+    }
+    &--right {
+      margin: 0 0 auto 0;
+    }
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+
+  &__group {
+    display: flex;
+    padding-left: 93px;
+  }
+  &__link {
+    color: var(--text-color);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    padding: 16px;
+    margin: 4px;
+
+    &--underline::after {
+      position: absolute;
+      content: "";
+      display: flex;
+      width: 58px;
+      height: 4px;
+      background-color: var(--primary-color);
+      margin-top: 28px;
+      margin-left: 18px;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+      @extend %hover-links;
+    }
+  }
+}
+
+.contact {
+  display: flex;
+
+  &__date {
+    color: var(--fourth-color);
+    padding: 16px;
+    margin: 4px;
+    fill: var(--fourth-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover,
+    &:focus,
+    &:active {
+      @extend %hover-links;
+      fill: var(--primary-color);
+    }
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+}
