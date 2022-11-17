@@ -24,3 +24,18 @@
     background-color: var(--secondary-color);
   }
 }
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .article__container {
+    width: 480px;
+    margin: 0px 15px;
+  }
+  .article__title {
+    text-align: center;
+  }
+  .article__group {
+    display: block;
+  }
+  .article__icon {
+    width: 450px;
+  }
+}

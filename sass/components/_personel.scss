@@ -60,3 +60,12 @@
     }
   }
 }
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .personel__container {
+    width: 480px;
+    margin: 0px 15px;
+  }
+  .personel__list {
+    display: inline-block;
+  }
+}
