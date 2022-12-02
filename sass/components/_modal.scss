@@ -197,8 +197,7 @@
 }
 @media screen and (min-width: 300px) and (max-width: 768px) {
   .modal {
-    width: 450px;
-    margin: 0px 15px;
+    width: 430px;
     height: 609px;
   }
 
@@ -210,6 +209,7 @@
     width: 370px;
   }
   .form__checkbox--description {
-    margin: 40px;
+    display: flex;
+    font-size: 12px;
   }
 }

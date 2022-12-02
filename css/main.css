@@ -736,6 +736,17 @@ body {
   }
   .article__icon {
     width: 360px;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 .responsibilities {
@@ -1154,8 +1165,7 @@ body {
 
 @media screen and (min-width: 300px) and (max-width: 768px) {
   .modal {
-    width: 450px;
-    margin: 0px 15px;
+    width: 430px;
     height: 609px;
   }
   .form__input {
@@ -1166,7 +1176,10 @@ body {
     width: 370px;
   }
   .form__checkbox--description {
-    margin: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 12px;
   }
 }
 .filters {
