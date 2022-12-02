@@ -7,18 +7,16 @@
   &__container {
     @extend %container;
     padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
 
     &--left {
-      float: left;
-      width: 25%;
+      display: flex;
+      flex-direction: column;
     }
     &--middle {
-      float: left;
-      width: 20%;
-    }
-    &--right {
-      float: right;
-      width: 50%;
+      display: flex;
+      flex-direction: column;
     }
   }
 
@@ -129,27 +127,31 @@
   .footer__container {
     width: 480px;
     margin: 0px 15px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px;
 
     &--left {
-      float: none;
-      width: 100%;
-      text-align: center;
-      margin-bottom: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
     }
     &--left a {
       display: flex;
       justify-content: center;
     }
     &--middle {
-      float: none;
-      width: 100%;
-      text-align: center;
-      margin-bottom: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
     }
     &--right {
-      float: none;
-      width: 100%;
-      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
   }
   .footer__form {
@@ -171,31 +173,19 @@
     width: 768px;
     margin: 0px 15px;
 
-    &--left {
-      float: left;
-      width: 50%;
-      text-align: center;
-      margin-bottom: 60px;
-    }
     &--left a {
+      display: flex;
+    }
+    &--middle {
       display: flex;
       justify-content: center;
     }
-    &--middle {
-      float: none;
-      width: 80%;
-      text-align: center;
-      margin-left: 144px;
-      margin-bottom: 120px;
-    }
+
     &--right {
-      float: none;
-      width: 60%;
-      margin: auto;
-    }
-    &--right h4 {
-      padding-right: 20px;
-      width: 300px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
     }
   }
   .footer__form {
@@ -207,5 +197,8 @@
   .footer__placeholder {
     width: 450px;
     margin-bottom: 20px;
+  }
+  .footer__newsletter {
+    padding: 0px;
   }
 }

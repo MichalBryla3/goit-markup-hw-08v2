@@ -339,18 +339,30 @@ body {
 }
 .footer__container {
   padding-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .footer__container--left {
-  float: left;
-  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .footer__container--middle {
-  float: left;
-  width: 20%;
-}
-.footer__container--right {
-  float: right;
-  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .footer__address {
   color: var(--third-color);
@@ -456,12 +468,29 @@ body {
   .footer__container {
     width: 480px;
     margin: 0px 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 60px;
   }
   .footer__container--left {
-    float: none;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .footer__container--left a {
     display: -webkit-box;
@@ -472,15 +501,34 @@ body {
             justify-content: center;
   }
   .footer__container--middle {
-    float: none;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .footer__container--right {
-    float: none;
-    width: 100%;
-    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .footer__form {
     display: block;
@@ -500,13 +548,12 @@ body {
     width: 768px;
     margin: 0px 15px;
   }
-  .footer__container--left {
-    float: left;
-    width: 50%;
-    text-align: center;
-    margin-bottom: 60px;
-  }
   .footer__container--left a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer__container--middle {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -514,21 +561,18 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .footer__container--middle {
-    float: none;
-    width: 80%;
-    text-align: center;
-    margin-left: 144px;
-    margin-bottom: 120px;
-  }
   .footer__container--right {
-    float: none;
-    width: 60%;
-    margin: auto;
-  }
-  .footer__container--right h4 {
-    padding-right: 20px;
-    width: 300px;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .footer__form {
     display: block;
@@ -539,6 +583,9 @@ body {
   .footer__placeholder {
     width: 450px;
     margin-bottom: 20px;
+  }
+  .footer__newsletter {
+    padding: 0px;
   }
 }
 .logo {
