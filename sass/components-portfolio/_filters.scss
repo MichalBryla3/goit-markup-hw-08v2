@@ -34,3 +34,9 @@
     justify-content: flex-start;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .filters__container {
+    width: 768px;
+    margin: 60px 15px 30px;
+  }
+}

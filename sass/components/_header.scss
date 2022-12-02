@@ -221,10 +221,26 @@
   .js-open-menu {
     display: none;
   }
+  .menu__container {
+    display: none;
+  }
+
+  .contact {
+    display: block;
+  }
+  .contact__date {
+    padding: 0px 0px 10px;
+    margin: 0px;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
 @media screen and (min-width: 1200px) {
   .mobile__button,
   .js-open-menu {
+    display: none;
+  }
+  .menu__container {
     display: none;
   }
 }
