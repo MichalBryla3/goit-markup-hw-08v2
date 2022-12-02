@@ -145,7 +145,6 @@
     }
 
     &--description {
-      display: flex;
       align-items: center;
       font-weight: 400;
       font-size: 14px;
@@ -194,5 +193,23 @@
       @extend %hover-btn;
       cursor: pointer;
     }
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  .modal {
+    width: 450px;
+    margin: 0px 15px;
+    height: 609px;
+  }
+
+  .form__input {
+    width: 370px;
+    padding-left: 42px;
+  }
+  .form__textarea {
+    width: 370px;
+  }
+  .form__checkbox--description {
+    margin: 40px;
   }
 }

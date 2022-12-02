@@ -196,6 +196,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    flex-wrap: wrap;
   }
   .mobile__social--color {
     color: var(--primary-color);
