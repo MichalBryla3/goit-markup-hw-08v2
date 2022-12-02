@@ -20,18 +20,31 @@
           ><span class="logo__header--first">Web</span
           ><span class="logo__header--second">Studio</span></a
         >
+
         <nav class="nav">
           <ul class="nav__group">
-            <li><a class="nav__link" href="index.html">Agencja</a></li>
             <li>
-              <a class="nav__link nav__link--underline" href="portfolio.html"
-                >Portfolio</a
+              <a class="nav__link nav__link--underline" href="index.html"
+                >Agencja</a
               >
             </li>
+            <li><a class="nav__link" href="portfolio.html">Portfolio</a></li>
             <li><a class="nav__link" href="#">Kontakt</a></li>
           </ul>
         </nav>
       </div>
+      <!-- -------------MENU MOBILNE------------- -->
+      <button
+        type="button"
+        class="mobile__button js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="mobile__icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-menu"></use>
+        </svg>
+      </button>
+
       <div class="header__container--right">
         <ul class="contact">
           <li>
@@ -386,6 +399,38 @@
         </div>
       </div>
     </footer>
-    <script defer src="./js/mobile-menu.js"></script>
+
+    <script src="./js/modal.js"></script>
+    <div class="menu__container js-menu-container" id="mobile-menu">
+      <button class="menu__toggle js-close-menu">
+        <svg width="18.67" height="18.67">
+          <use href="./images/icons.svg#icon-X"></use>
+        </svg>
+      </button>
+      <ul class="menu__nav">
+        <li>
+          <a class="nav__link" href="index.html">Agencja</a>
+        </li>
+        <li>
+          <a class="nav__link" href="portfolio.html">Portfolio</a>
+        </li>
+        <li><a class="nav__link" href="#">Kontakt</a></li>
+      </ul>
+      <ul class="contact__mobile">
+        <li class="contact__date--mobile">
+          <a href="tel:+48111111111">+48 111 111 111</a>
+        </li>
+        <li class="contact__date--mobile">
+          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+      </ul>
+      <div class="mobile__social">
+        <a class="mobile__social--color" href="#">Instagram</a>
+        <a class="mobile__social--color" href="#">Twitter</a>
+        <a class="mobile__social--color" href="#">Facebook</a>
+        <a class="mobile__social--color" href="#">Linkedin</a>
+      </div>
+    </div>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

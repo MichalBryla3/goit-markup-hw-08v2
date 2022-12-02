@@ -122,3 +122,45 @@
     margin-left: 24px;
   }
 }
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  .footer {
+    height: 600px;
+  }
+  .footer__container {
+    width: 480px;
+    margin: 0px 15px;
+
+    &--left {
+      float: none;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    &--left a {
+      display: flex;
+      justify-content: center;
+    }
+    &--middle {
+      float: none;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    &--right {
+      float: none;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .footer__form {
+    display: block;
+  }
+  .footer__form button {
+    margin: auto;
+  }
+
+  .footer__placeholder {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+}

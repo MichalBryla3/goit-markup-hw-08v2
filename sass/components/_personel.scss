@@ -65,7 +65,10 @@
     width: 480px;
     margin: 0px 15px;
   }
+
   .personel__list {
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
