@@ -19,7 +19,7 @@
   top: 50%;
   transform: translate(-50%, -50%);
   width: 528px;
-  min-height: 581px;
+  height: 581px;
   background-color: var(--third-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -61,7 +61,7 @@
     font-size: 20px;
     line-height: 23px;
     letter-spacing: 0.03em;
-    margin-top: 40px;
+    margin-bottom: 12px;
   }
 
   &__input {
@@ -72,7 +72,7 @@
     padding-left: 42px;
   }
   &__textarea {
-    width: 448px;
+    width: 100%;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     resize: none;
@@ -89,25 +89,27 @@
     margin-bottom: 4px;
     margin-top: 10px;
   }
-
+  label {
+    position: relative;
+  }
   &__icon1 {
     position: absolute;
-    left: 55px;
-    top: 106px;
+    left: 15px;
+    top: 50%;
     height: 11px;
     width: 11px;
   }
   &__icon2 {
     position: absolute;
-    left: 55px;
-    top: 173px;
+    left: 15px;
+    top: 50%;
     height: 13px;
     width: 13px;
   }
   &__icon3 {
     position: absolute;
-    left: 55px;
-    top: 242px;
+    left: 15px;
+    top: 50%;
     height: 15px;
     width: 13px;
   }
@@ -191,21 +193,24 @@
     }
   }
 }
-@media screen and (min-width: 300px) and (max-width: 768px) {
+@media screen and (max-width: 1199px) {
   .modal {
-    width: 430px;
-    height: 609px;
+    width: 95%;
+    max-width: 450px;
+    height: 95%;
+    max-height: 609px;
   }
 
   .form__input {
-    width: 370px;
+    width: 100%;
+
     padding-left: 42px;
   }
   .form__textarea {
-    width: 370px;
+    width: 100%;
   }
   .form__checkbox--description {
-    display: flex;
     font-size: 12px;
+    margin-left: 20px;
   }
 }
