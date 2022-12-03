@@ -3,9 +3,6 @@
   display: flex;
   justify-content: center;
 
-  &__container {
-    @extend %container;
-  }
   &__group {
     display: flex;
     padding: 0px;

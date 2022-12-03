@@ -24,9 +24,6 @@
   background-size: 1600px;
   background-position: 50% 50%;
 
-  &__container {
-    @extend %container;
-  }
   &__btn {
     cursor: pointer;
     font-weight: 700;
@@ -54,10 +51,6 @@
   }
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
-  .slider__container {
-    width: 480px;
-    margin: 0px 15px;
-  }
   .slider__title {
     font-size: 26px;
     line-height: 42px;
@@ -65,8 +58,4 @@
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-  .slider__container {
-    width: 768px;
-    margin: 0px 15px;
-  }
 }

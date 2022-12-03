@@ -26,8 +26,7 @@ body {
   color: var(--text-color);
   background-color: var(--background-color);
   font-size: var(--font-size);
-  font-weight: var(--font-weight);
-  font-style: var(--font-style);
+  letter-spacing: 0.03em;
 }
 .visually-hidden {
   position: absolute !important;

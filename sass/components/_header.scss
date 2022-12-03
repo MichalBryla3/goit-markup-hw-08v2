@@ -5,19 +5,17 @@
   align-items: center;
   justify-content: center;
 
-  &__container {
-    @extend %container;
+  .container {
     display: flex;
     align-items: center;
-
-    &--left {
-      display: flex;
-      justify-content: flex-start;
-      margin: 0 auto 0 0;
-    }
-    &--right {
-      margin: 0 0 auto 0;
-    }
+  }
+  &__container--left {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto 0 0;
+  }
+  &__container--right {
+    margin: 0 0 auto 0;
   }
 }
 
@@ -88,9 +86,8 @@
   .contact {
     display: none;
   }
-  .header__container {
-    width: 480px;
-    margin: 0px 15px;
+  .header {
+    height: 60px;
   }
 
   .mobile__button {
@@ -214,10 +211,6 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-  .header__container {
-    width: 768px;
-    margin: 0px 15px;
-  }
   .mobile__button,
   .js-open-menu {
     display: none;

@@ -28,8 +28,7 @@ body {
   color: var(--text-color);
   background-color: var(--background-color);
   font-size: var(--font-size);
-  font-weight: var(--font-weight);
-  font-style: var(--font-style);
+  letter-spacing: 0.03em;
 }
 
 .visually-hidden {
@@ -41,11 +40,6 @@ body {
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
-}
-
-.cards__container, .filters__container, .form__backdrop__container, .clients__container, .personel__container, .responsibilities__container, .article__container, .slider__container, .footer__container, .header__container {
-  width: 1200px;
-  margin: 0px 215px;
 }
 
 .form__btn:hover, .form__btn:focus, .slider__btn:hover, .footer__btn:hover, .footer__btn:focus, .footer__btn:active .footer__send-icon:hover {
@@ -66,6 +60,27 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0px auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-widht: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 .header {
   border-bottom: 1px solid #ececec;
   height: 80px;
@@ -79,7 +94,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.header__container {
+.header .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -169,9 +184,8 @@ body {
   .contact {
     display: none;
   }
-  .header__container {
-    width: 480px;
-    margin: 0px 15px;
+  .header {
+    height: 60px;
   }
   .mobile__button {
     min-height: 40px;
@@ -293,10 +307,6 @@ body {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-  .header__container {
-    width: 768px;
-    margin: 0px 15px;
-  }
   .mobile__button,
 .js-open-menu {
     display: none;
@@ -338,7 +348,7 @@ body {
           justify-content: center;
 }
 .footer__container {
-  padding-top: 60px;
+  margin-top: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -465,18 +475,6 @@ body {
   .footer {
     height: 600px;
   }
-  .footer__container {
-    width: 480px;
-    margin: 0px 15px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding-bottom: 60px;
-  }
   .footer__container--left {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -515,6 +513,16 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 60px;
+  }
   .footer__container--right {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -543,10 +551,6 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .footer {
     height: 463px;
-  }
-  .footer__container {
-    width: 768px;
-    margin: 0px 15px;
   }
   .footer__container--left a {
     display: -webkit-box;
@@ -657,20 +661,10 @@ body {
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
-  .slider__container {
-    width: 480px;
-    margin: 0px 15px;
-  }
   .slider__title {
     font-size: 26px;
     line-height: 42px;
     letter-spacing: 0.06em;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .slider__container {
-    width: 768px;
-    margin: 0px 15px;
   }
 }
 .article {
@@ -795,8 +789,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-.personel__container {
   padding-top: 94px;
 }
 .personel__list {
@@ -857,10 +849,6 @@ body {
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
-  .personel__container {
-    width: 480px;
-    margin: 0px 15px;
-  }
   .personel__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -873,10 +861,6 @@ body {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-  .personel__container {
-    width: 768px;
-    margin: 0px 15px;
-  }
   .personel__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -896,7 +880,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.clients__container {
+.clients .container {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -924,10 +908,6 @@ body {
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
-  .clients__container {
-    width: 480px;
-    margin: 0px 15px;
-  }
   .clients__content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -941,10 +921,6 @@ body {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-  .clients__container {
-    width: 768px;
-    margin: 0px 15px;
-  }
   .clients__content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -972,6 +948,7 @@ body {
   -webkit-transition: opacity 250ms ease-in-out;
   transition: opacity 250ms ease-in-out;
 }
+
 .modal {
   position: absolute;
   left: 50%;
@@ -1229,9 +1206,6 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.cards__container {
-  padding-bottom: 94px;
-}
 .cards__list {
   padding: 0px;
   display: -webkit-box;
@@ -1243,6 +1217,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   row-gap: 30px;
+  margin-bottom: 94px;
 }
 .cards__list li {
   background: var(--third-color);
@@ -1311,19 +1286,9 @@ body {
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
-  .cards__container {
-    width: 480px;
-    margin: 0px 15px;
-  }
   .cards__list {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .cards__container {
-    width: 768px;
-    margin: 0px 15px;
   }
 }/*# sourceMappingURL=main.css.map */

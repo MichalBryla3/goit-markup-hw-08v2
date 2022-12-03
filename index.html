@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Studio</title>
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
@@ -15,7 +22,7 @@
   <body>
     <!-- -------------HEADER------------- -->
     <header class="header">
-      <div class="header__container">
+      <div class="container">
         <div class="header__container--left">
           <a class="logo" href="index.html"
             ><span class="logo__header--first">Web</span
@@ -78,7 +85,7 @@
     <main>
       <!-- -------------SLIDER------------- -->
       <section class="slider">
-        <div class="slider__container">
+        <div class="container">
           <h1 class="slider__title">
             EFEKTYWNE ROZWIĄZANIA<br />DLA WASZEGO BIZNESU
           </h1>
@@ -90,7 +97,7 @@
 
       <!-- ------------ARTICLE-------------- -->
       <section class="article">
-        <div class="article__container">
+        <div class="container">
           <ul class="article__group">
             <li>
               <svg class="article__icon" id="icon-antenna-1">
@@ -160,7 +167,7 @@
 
       <!-- -------------RESPONSIBILITIES------------- -->
       <section class="responsibilities">
-        <div class="responsibilities__container">
+        <div class="container">
           <h2 class="title">Czym się zajmujemy</h2>
           <ul class="responsibilities__list">
             <li>
@@ -195,7 +202,7 @@
       </section>
       <!-- -------------PERSONEL------------- -->
       <section class="personel">
-        <div class="personel__container">
+        <div class="container">
           <h2 class="title">Nasz zespół</h2>
           <ul class="personel__list">
             <li>
@@ -411,7 +418,7 @@
       </section>
       <!-- -------------CLIENTS------------- -->
       <section class="clients">
-        <div class="clients__container">
+        <div class="container">
           <h2 class="title">Nasi klienci</h2>
           <ul class="clients__content">
             <li>
@@ -493,93 +500,95 @@
 
     <!-- -------------FOOTER------------- -->
     <footer class="footer">
-      <div class="footer__container">
-        <div class="footer__container--left">
-          <a class="logo" href="index.html"
-            ><span class="logo__footer--first">Web</span
-            ><span class="logo__footer--second">Studio</span></a
-          >
-          <address class="footer__address">
-            <ul class="footer__list">
-              <li>m. Warszawa, Aleje Jerozolimskie 21</li>
-              <li>
-                <a href="mailto:info@example.com" class="footer__contact"
-                  >info@example.com</a
-                >
-              </li>
-              <li>
-                <a href="tel:+48111111111" class="footer__contact"
-                  >+48 111 111 111</a
-                >
-              </li>
-            </ul>
-          </address>
-        </div>
-        <div class="footer__container--middle">
-          <h3 class="footer__title--social">Dołącz do nas</h3>
-          <div class="footer__social">
-            <a href="#"
-              ><svg class="footer__social-icon" id="icon-instagram">
-                <use
-                  xlink:href="./images/icons.svg#icon-instagram"
-                  width="20px"
-                  height="20px"
-                  x="12px"
-                  y="12px"
-                ></use></svg></a
-            ><a href="#"
-              ><svg class="footer__social-icon" id="icon-twitter">
-                <use
-                  xlink:href="./images/icons.svg#icon-twitter"
-                  width="20px"
-                  height="20px"
-                  x="12px"
-                  y="12px"
-                ></use></svg></a
-            ><a href="#"
-              ><svg class="footer__social-icon" id="icon-facebook">
-                <use
-                  xlink:href="./images/icons.svg#icon-facebook"
-                  width="20px"
-                  height="20px"
-                  x="12px"
-                  y="12px"
-                ></use></svg></a
-            ><a href="#"
-              ><svg class="footer__social-icon" id="icon-linkedin">
-                <use
-                  xlink:href="./images/icons.svg#icon-linkedin"
-                  width="20px"
-                  height="20px"
-                  x="12px"
-                  y="12px"
-                ></use></svg
-            ></a>
+      <div class="container">
+        <div class="footer__container">
+          <div class="footer__container--left">
+            <a class="logo" href="index.html"
+              ><span class="logo__footer--first">Web</span
+              ><span class="logo__footer--second">Studio</span></a
+            >
+            <address class="footer__address">
+              <ul class="footer__list">
+                <li>m. Warszawa, Aleje Jerozolimskie 21</li>
+                <li>
+                  <a href="mailto:info@example.com" class="footer__contact"
+                    >info@example.com</a
+                  >
+                </li>
+                <li>
+                  <a href="tel:+48111111111" class="footer__contact"
+                    >+48 111 111 111</a
+                  >
+                </li>
+              </ul>
+            </address>
           </div>
-        </div>
+          <div class="footer__container--middle">
+            <h3 class="footer__title--social">Dołącz do nas</h3>
+            <div class="footer__social">
+              <a href="#"
+                ><svg class="footer__social-icon" id="icon-instagram">
+                  <use
+                    xlink:href="./images/icons.svg#icon-instagram"
+                    width="20px"
+                    height="20px"
+                    x="12px"
+                    y="12px"
+                  ></use></svg></a
+              ><a href="#"
+                ><svg class="footer__social-icon" id="icon-twitter">
+                  <use
+                    xlink:href="./images/icons.svg#icon-twitter"
+                    width="20px"
+                    height="20px"
+                    x="12px"
+                    y="12px"
+                  ></use></svg></a
+              ><a href="#"
+                ><svg class="footer__social-icon" id="icon-facebook">
+                  <use
+                    xlink:href="./images/icons.svg#icon-facebook"
+                    width="20px"
+                    height="20px"
+                    x="12px"
+                    y="12px"
+                  ></use></svg></a
+              ><a href="#"
+                ><svg class="footer__social-icon" id="icon-linkedin">
+                  <use
+                    xlink:href="./images/icons.svg#icon-linkedin"
+                    width="20px"
+                    height="20px"
+                    x="12px"
+                    y="12px"
+                  ></use></svg
+              ></a>
+            </div>
+          </div>
 
-        <div class="footer__container--right">
-          <h4 class="footer__newsletter">Zapisz się do newslettera</h4>
-          <form class="footer__form">
-            <label
-              ><input
-                class="footer__placeholder"
-                type="email"
-                name="email"
-                placeholder="E-mail"
-                required
-              />
-            </label>
-            <button class="footer__btn" type="submit">
-              Zapisz się<svg class="footer__send-icon" id="icon-send">
-                <use
-                  xlink:href="./images/icons.svg#icon-send"
-                  width="24px"
-                  height="24px"
-                ></use>
-              </svg>
-            </button>
-          </form>
+          <div class="footer__container--right">
+            <h4 class="footer__newsletter">Zapisz się do newslettera</h4>
+            <form class="footer__form">
+              <label
+                ><input
+                  class="footer__placeholder"
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                  required
+                />
+              </label>
+              <button class="footer__btn" type="submit">
+                Zapisz się<svg class="footer__send-icon" id="icon-send">
+                  <use
+                    xlink:href="./images/icons.svg#icon-send"
+                    width="24px"
+                    height="24px"
+                  ></use>
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
