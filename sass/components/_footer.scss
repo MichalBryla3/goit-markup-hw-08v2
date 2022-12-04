@@ -170,21 +170,24 @@
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .footer {
     height: 463px;
+  }
 
-    &__container--left a {
-      display: flex;
-    }
-    &__container--middle {
-      display: flex;
-      justify-content: center;
-    }
+  .footer__container {
+    display: flex;
+    justify-content: space-around;
+  }
 
-    &__container--right {
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-    }
+  .footer__container--middle {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .footer__container--right {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 60px;
   }
 
   .footer__form {

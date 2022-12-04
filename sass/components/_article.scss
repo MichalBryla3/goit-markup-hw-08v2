@@ -21,7 +21,7 @@
     background-color: var(--secondary-color);
   }
 }
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .article__title {
     text-align: center;
   }
@@ -30,10 +30,6 @@
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-  .article__container {
-    width: 768px;
-    margin: 0px 15px;
-  }
   .article__group {
     display: flex;
     flex-wrap: wrap;
@@ -44,6 +40,6 @@
     flex-basis: calc((100% - 30px) / 2);
   }
   .article__icon {
-    width: 360px;
+    width: 350px;
   }
 }
