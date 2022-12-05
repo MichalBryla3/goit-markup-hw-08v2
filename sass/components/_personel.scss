@@ -8,7 +8,6 @@
     padding: 0px;
     margin: 0px;
     gap: 30px;
-    padding-bottom: 94px;
 
     & li {
       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -67,5 +66,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+  .personel__list li {
+    width: 354px;
   }
 }

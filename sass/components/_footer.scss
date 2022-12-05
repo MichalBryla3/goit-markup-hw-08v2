@@ -193,6 +193,15 @@
     flex-direction: column;
     margin-top: 60px;
   }
+  .footer__container--left {
+    align-items: center;
+  }
+  .footer__list {
+    text-align: center;
+  }
+  .footer__title--social {
+    text-align: center;
+  }
   .footer__form {
     display: block;
   }
@@ -205,5 +214,15 @@
   }
   .footer__newsletter {
     padding: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer div:first-child {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  .footer__container {
+    gap: 60px;
   }
 }
