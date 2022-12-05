@@ -100,15 +100,17 @@
         <div class="container">
           <ul class="article__group">
             <li>
-              <svg class="article__icon" id="icon-antenna-1">
-                <use
-                  xlink:href="./images/icons.svg#icon-antenna-1"
-                  width="65.32px"
-                  height="70px"
-                  x="101.5"
-                  y="25"
-                ></use>
-              </svg>
+              <div class="article__icon">
+                <svg id="icon-antenna-1">
+                  <use
+                    xlink:href="./images/icons.svg#icon-antenna-1"
+                    width="65.32px"
+                    height="70px"
+                    x="101.5"
+                    y="25"
+                  ></use>
+                </svg>
+              </div>
               <h3 class="article__title">LOREM IPSUM</h3>
               <p class="article__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
@@ -116,15 +118,17 @@
               </p>
             </li>
             <li>
-              <svg class="article__icon" id="icon-clock-1">
-                <use
-                  xlink:href="./images/icons.svg#icon-clock-1"
-                  width="66.96px"
-                  height="70px"
-                  x="101.5"
-                  y="25"
-                ></use>
-              </svg>
+              <div class="article__icon">
+                <svg id="icon-clock-1">
+                  <use
+                    xlink:href="./images/icons.svg#icon-clock-1"
+                    width="66.96px"
+                    height="70px"
+                    x="101.5"
+                    y="25"
+                  ></use>
+                </svg>
+              </div>
               <h3 class="article__title">LOREM IPSUM</h3>
               <p class="article__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
@@ -132,15 +136,17 @@
               </p>
             </li>
             <li>
-              <svg class="article__icon" id="icon-diagram-1">
-                <use
-                  xlink:href="./images/icons.svg#icon-diagram-1"
-                  width="70px"
-                  height="53.69px"
-                  x="100"
-                  y="33.2"
-                ></use>
-              </svg>
+              <div class="article__icon">
+                <svg id="icon-diagram-1">
+                  <use
+                    xlink:href="./images/icons.svg#icon-diagram-1"
+                    width="70px"
+                    height="53.69px"
+                    x="100"
+                    y="33.2"
+                  ></use>
+                </svg>
+              </div>
               <h3 class="article__title">LOREM IPSUM</h3>
               <p class="article__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
@@ -148,15 +154,17 @@
               </p>
             </li>
             <li>
-              <svg class="article__icon" id="icon-astronaut-1">
-                <use
-                  xlink:href="./images/icons.svg#icon-astronaut-1"
-                  width="54.83px"
-                  height="60.66px"
-                  x="100"
-                  y="33.23"
-                ></use>
-              </svg>
+              <div class="article__icon">
+                <svg id="icon-astronaut-1">
+                  <use
+                    xlink:href="./images/icons.svg#icon-astronaut-1"
+                    width="54.83px"
+                    height="60.66px"
+                    x="100"
+                    y="33.23"
+                  ></use>
+                </svg>
+              </div>
               <h3 class="article__title">LOREM IPSUM</h3>
               <p class="article__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
@@ -209,11 +217,21 @@
           <ul class="personel__list">
             <li>
               <img
-                src="./images/johndoe.jpg"
-                alt="smilling men in eyeglasses, he has beard and wearing purple shirt"
+                scrset="
+                ./images/johndoe-mobile@1x.jpg 450w,
+                ./images/johndoe-mobile@2x.jpg 900w,
+                ./images/johndoe-tablet@1x.jpg 354w, 
+                ./images/johndoe-tablet@2x.jpg 700w,
+                ./images/johndoe@1x.jpg 270w, 
+                ./images/johndoe@2x.jpg 540w"
+                src="./images/johndoe-mobile.jpg"
+                sizes="(min-width: 1200px 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                min-width="270"
                 width="270"
                 height="260"
+                alt="smilling men in eyeglasses, he has beard and wearing purple shirt"
               />
+
               <h3 class="personel__subtitle">John Doe</h3>
               <p class="personel__body">Product Designer</p>
               <div class="personel__social">
@@ -261,11 +279,21 @@
             </li>
             <li>
               <img
-                src="./images/johndoe2.jpg"
-                alt="smilling blone hair women in eyeglasses, she is wearing black suit  "
+                scrset="
+                ./images/johndoe-mobile2@1x.jpg 450w,
+                ./images/johndoe-mobile2@2x.jpg 900w,
+                ./images/johndoe-tablet2@1x.jpg 354w, 
+                ./images/johndoe-tablet2@2x.jpg 700w,
+                ./images/johndoe2@1x.jpg 270w, 
+                ./images/johndoe2@2x.jpg 540w"
+                src="./images/johndoe-mobile2.jpg"
+                sizes="(min-width: 1200px 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                min-width="270"
                 width="270"
                 height="260"
+                alt="smilling blone hair women in eyeglasses, she is wearing black suit"
               />
+
               <h3 class="personel__subtitle">John Doe</h3>
               <p class="personel__body">Frontend Developer</p>
               <div class="personel__social">
@@ -313,11 +341,21 @@
             </li>
             <li>
               <img
-                src="./images/johndoe3.jpg"
-                alt="smilling men, he is wearing plain shirt"
+                scrset="
+                ./images/johndoe-mobile3@1x.jpg 450w,
+                ./images/johndoe-mobile3@2x.jpg 900w,
+                ./images/johndoe-tablet3@1x.jpg 354w, 
+                ./images/johndoe-tablet3@2x.jpg 700w,
+                ./images/johndoe3@1x.jpg 270w, 
+                ./images/johndoe3@2x.jpg 540w"
+                src="./images/johndoe-mobile3.jpg"
+                sizes="(min-width: 1200px 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                min-width="270"
                 width="270"
                 height="260"
+                alt="smilling men, he is wearing plain shirt"
               />
+
               <h3 class="personel__subtitle">John Doe</h3>
               <p class="personel__body">Marketing</p>
               <div class="personel__social">
@@ -365,11 +403,21 @@
             </li>
             <li>
               <img
-                src="./images/johndoe4.jpg"
-                alt="men in eyeglasses, beard and black t-shirt"
+                scrset="
+                ./images/johndoe-mobile4@1x.jpg 450w,
+                ./images/johndoe-mobile4@2x.jpg 900w,
+                ./images/johndoe-tablet4@1x.jpg 354w, 
+                ./images/johndoe-tablet4@2x.jpg 700w,
+                ./images/johndoe4@1x.jpg 270w, 
+                ./images/johndoe4@2x.jpg 540w"
+                src="./images/johndoe-mobile4.jpg"
+                sizes="(min-width: 1200px 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                min-width="270"
                 width="270"
                 height="260"
+                alt="men in eyeglasses, beard and black t-shirt"
               />
+
               <h3 class="personel__subtitle">John Doe</h3>
               <p class="personel__body">UI Designer</p>
               <div class="personel__social">
@@ -691,7 +739,9 @@
       </button>
       <ul class="menu__nav">
         <li>
-          <a class="nav__link" href="index.html">Agencja</a>
+          <a class="nav__link nav__link--mobile-color" href="index.html"
+            >Agencja</a
+          >
         </li>
         <li>
           <a class="nav__link" href="portfolio.html">Portfolio</a>

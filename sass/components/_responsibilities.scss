@@ -35,9 +35,17 @@
   .responsibilities {
     display: none;
   }
+  .title {
+    font-size: 28px;
+    line-height: 33px;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .responsibilities {
     display: none;
+  }
+  .title {
+    font-size: 28px;
+    line-height: 33px;
   }
 }
