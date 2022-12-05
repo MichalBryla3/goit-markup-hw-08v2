@@ -119,6 +119,7 @@
     margin-left: 24px;
   }
 }
+
 @media screen and (min-width: 300px) and (max-width: 767px) {
   .footer {
     height: 653px;
@@ -164,7 +165,11 @@
   .footer__placeholder {
     margin-bottom: 20px;
     width: 100%;
-    width: 400px;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 767px) {
+  .footer__placeholder {
+    width: 380px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
